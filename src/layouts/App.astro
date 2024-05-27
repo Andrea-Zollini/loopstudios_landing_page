@@ -24,8 +24,7 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
-  <body>
-    <Header />
+  <body class="josefin-sans-font">
     <slot />
 
     <Footer />
@@ -33,6 +32,9 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+  body {
+    font-size: 15px;
+  }
   .alata-regular {
     font-family: "Alata", sans-serif;
     font-weight: 400;

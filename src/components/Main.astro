@@ -1,1 +1,25 @@
-<main>Main</main>
+---
+import Image from "astro/components/Image.astro";
+import VrDude from "../../public/mobile/image-interactive.jpg";
+---
+
+<main class="py-11 px-8">
+  <section class="py-7">
+    <Image src={VrDude} alt="Dude with a Vr" />
+
+    <div class="py-11 px-7">
+      <h2 class="text-center lg:text-start text-5xl uppercase mb-8 mt-7">
+        The leader in interactive VR
+      </h2>
+      <p class="alata-regular text-gray-400 text-lg leading-7 text-center">
+        Founded in 2011, Loopstudios has been producing world-class virtual
+        reality projects for some of the best companies around the globe. Our
+        award-winning creations have transformed businesses through digital
+        experiences that bind to their brand.
+      </p>
+    </div>
+  </section>
+  <section>
+    <h2 class="uppercase">our creations</h2>
+  </section>
+</main>
