@@ -6,6 +6,14 @@
   Products
   Support
  */
+
+import Image from "astro/components/Image.astro";
+import Logo from "../../public/logo.svg";
+import Hamburger from "../../public/icon-hamburger.svg";
 ---
 
-<header>header</header>
+<header class="flex justify-between sticky top-0 px-5 lg:px-0 py-8">
+  <Image src={Logo} alt="Loopstudios Logo" />
+
+  <Image src={Hamburger} alt="" />
+</header>
